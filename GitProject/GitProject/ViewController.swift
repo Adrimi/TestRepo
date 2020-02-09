@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let newViewController = UIViewController()
+    private let newViewContrroler = UIViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newViewController.view.backgroundColor = .red
-        navigationController?.pushViewController(newViewController, animated: true)
+        newViewContrroler.view.backgroundColor = .blue
+        navigationController?.pushViewController(newViewContrroler, animated: true)
     }
 
 

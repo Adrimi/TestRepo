@@ -16,7 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         newViewContrroler.view.backgroundColor = .blue
-        navigationController?.pushViewController(newViewContrroler, animated: true)
+        navigationController?.present(newViewContrroler, animated: true, completion: {
+            UIView.animate(withDuration: 2, animations: {
+                self.newViewContrroler.view.backgroundColor = .red
+            }) { _ in
+                self.dismiss(animated: true)
+            }
+        })
     }
 
 
